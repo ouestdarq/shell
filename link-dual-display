@@ -1,0 +1,14 @@
+#!/bin/sh
+
+APPLDUALSINK=sink.Dual_Apple_Inc._Display_Audio.analog-stereo
+APPLDUAL_L=alsa_output.usb-Apple_Inc._Display_Audio_27711502-00.analog-stereo
+APPLDUAL_R=alsa_output.usb-Apple_Inc._Display_Audio_27711702-00.analog-stereo
+
+function __link () {
+        /usr/bin/pw-link $APPLDUALSINK:monitor_FL $APPLDUAL_L:playback_FL
+        /usr/bin/pw-link $APPLDUALSINK:monitor_FL $APPLDUAL_L:playback_FR
+        /usr/bin/pw-link $APPLDUALSINK:monitor_FR $APPLDUAL_R:playback_FL
+        /usr/bin/pw-link $APPLDUALSINK:monitor_FR $APPLDUAL_R:playback_FR
+}
+sleep 5
+__link
