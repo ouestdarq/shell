@@ -1,0 +1,23 @@
+<background>
+  <starttime>
+    <year>2011</year>
+    <month>11</month>
+    <day>24</day>
+    <hour>00</hour>
+    <minute>00</minute>
+    <second>00</second>
+  </starttime>
+
+  <static>
+    <duration>36000.0</duration>
+    <file>__LOCATION__/backgrounds/gnome/__TARGET__</file>
+  </static>
+
+
+  <transition type="overlay">
+    <duration>3600.0</duration>
+    <from>__LOCATION__/backgrounds/gnome/__TARGET__</from>
+    <to>__LOCATION__/backgrounds/gnome/__TARGET__</to>
+  </transition>
+
+</background>

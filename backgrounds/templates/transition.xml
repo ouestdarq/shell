@@ -1,0 +1,5 @@
+<transition type="overlay">
+    <duration>3600.0</duration>
+    <from>__LOCATION__/backgrounds/gnome/__TARGET__-</from>
+    <to>__LOCATION__/backgrounds/gnome/__TARGET__-</to>
+  </transition>

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+printf "cmake_minimum_required(%i.%.1f)\n" 3 7
+printf "if(DEFINED ENV{%s}\n" CNAME
+printf "message(\"%s\")\n" "++ Detecting CXX compile name \$ENV{CNAME}"
+printf "endif()\n\n"
+
